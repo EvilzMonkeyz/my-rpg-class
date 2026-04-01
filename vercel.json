@@ -1,8 +1,16 @@
 {
+    "version": 2,
+    "public": true,
+    "name": "my-rpg-class",
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/api/index"
         }
-    ]
+    ],
+    "functions": {
+        "api/index.js": {
+            "includeFiles": "dist/my-rpg-class/**"
+        }
+    }
 }
