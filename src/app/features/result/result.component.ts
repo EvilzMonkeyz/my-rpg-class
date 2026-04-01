@@ -167,17 +167,16 @@ export class ResultComponent implements OnInit {
 
       if (payload) {
         this.stats = this.decoder.decode(payload);
-        console.log({ stats: this.stats, payload });
         if (this.stats) {
           const mainStat = this.calculateHighestStat(this.stats);
           this.determinedClass = CLASSES.find(c => c.primaryStat === mainStat)!;
           this.initChart();
           this.updateMetaTags();
         } else {
-          // this.router.navigate(['/']); // Invalid payload
+          this.router.navigate(['/']); // Invalid payload
         }
       } else {
-        // this.router.navigate(['/']); // No payload
+        this.router.navigate(['/']); // No payload
       }
     });
   }
