@@ -1,4 +1,5 @@
-import { Injectable, signal, computed } from '@angular/core';
+import { Injectable, signal, computed, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Language, Choice, RPGStat } from '../models/quiz.model';
 import { QUESTIONS } from '../../data/questions';
 import { CLASSES } from '../../data/classes';
@@ -7,8 +8,11 @@ import { CLASSES } from '../../data/classes';
   providedIn: 'root'
 })
 export class QuizStateService {
+  private document = inject(DOCUMENT);
+
   // Core State
   activeLanguage = signal<Language>('en');
+  activeTheme = signal<'dark' | 'light'>('dark');
   currentQuestionIndex = signal<number>(0);
   
   // Track stats dynamically
@@ -46,6 +50,25 @@ export class QuizStateService {
   // Actions
   toggleLanguage() {
     this.activeLanguage.update(lang => lang === 'en' ? 'th' : 'en');
+  }
+
+  toggleTheme() {
+    this.activeTheme.update(theme => {
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+      if (newTheme === 'dark') {
+        this.document.documentElement.classList.add('dark');
+      } else {
+        this.document.documentElement.classList.remove('dark');
+      }
+      return newTheme;
+    });
+  }
+
+  initTheme() {
+    // Force set initial theme to DOM
+    if (this.activeTheme() === 'dark') {
+      this.document.documentElement.classList.add('dark');
+    }
   }
 
   answerQuestion(choice: Choice) {

@@ -19,7 +19,7 @@ export interface RPGClass {
   primaryStat: RPGStat;
   imageUrl?: string;
   gearRecommendation: {
-    en: { name: string; url: string };
-    th: { name: string; url: string };
+    en: { description: string; name: string; url: string };
+    th: { description: string; name: string; url: string };
   };
 }
