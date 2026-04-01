@@ -173,10 +173,10 @@ export class ResultComponent implements OnInit {
           this.initChart();
           this.updateMetaTags();
         } else {
-          this.router.navigate(['/']); // Invalid payload
+          // this.router.navigate(['/']); // Invalid payload
         }
       } else {
-        this.router.navigate(['/']); // No payload
+        // this.router.navigate(['/']); // No payload
       }
     });
   }
