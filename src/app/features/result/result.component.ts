@@ -64,16 +64,16 @@ Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Fi
           </div>
 
           <!-- Adventurer's Armory (Affiliate Monetization) -->
-          <div class="w-full bg-slate-900 border border-slate-800 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 p-10 rounded-3xl shadow-2xl text-center relative overflow-hidden text-white transition-all duration-500">
+          <div class="w-full bg-slate-900 border border-slate-800 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 px-10 sm:px-12 py-12 sm:py-16 rounded-3xl shadow-2xl text-center relative overflow-hidden text-white transition-all duration-500">
             <!-- Decorative badge -->
             <div class="absolute top-0 right-0 bg-yellow-500 text-slate-900 font-extrabold px-6 py-2 rounded-bl-2xl shadow-lg border-b border-l border-yellow-400">
                {{ lang === 'en' ? 'SPONSORED' : 'ผู้สนับสนุน' }}
             </div>
             
-            <h2 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-6 drop-shadow">
+            <h2 class="text-xl sm:text-2xl flex items-center justify-center  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-6 drop-shadow">
                💎 {{ lang === 'en' ? "Class-Specific Loot" : 'ไอเทมลับประจำคลาส' }} 💎
             </h2>
-            <p class="text-slate-300 dark:text-gray-300 mb-8 text-lg font-medium">
+            <p class="text-slate-300 dark:text-gray-300 mb-8 text-md sm:text-lg font-medium">
                {{ determinedClass.gearRecommendation[lang].description }}
             </p>
             

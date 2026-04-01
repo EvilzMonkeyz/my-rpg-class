@@ -12,7 +12,7 @@ import { LanguageToggleComponent } from '../../shared/components/language-toggle
   standalone: true,
   imports: [CommonModule, LanguageToggleComponent],
   template: `
-    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4 pt-24 md:p-8 transition-colors duration-500 relative">
+    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4 pt-24 lg:p-8 transition-colors duration-500 relative">
       <app-language-toggle></app-language-toggle>
 
       <div class="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-3xl shadow-2xl dark:shadow-purple-900/20 shadow-indigo-100 p-8 border border-gray-100 dark:border-gray-700 transition-all duration-500">
@@ -33,7 +33,7 @@ import { LanguageToggleComponent } from '../../shared/components/language-toggle
 
         @if (currentQuestion()) {
           <!-- Question Text -->
-          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-white mb-10 text-center leading-snug drop-shadow-sm transition-colors duration-500">
+          <h2 class="text-xl md:text-2xl font-extrabold text-slate-800 dark:text-white mb-10 text-center leading-snug drop-shadow-sm transition-colors duration-500">
             {{ currentQuestion()!.text[state.activeLanguage()] }}
           </h2>
 
@@ -67,13 +67,15 @@ export class QuizComponent {
   progress = computed(() => ((this.state.currentQuestionIndex()) / this.totalQuestions) * 100);
 
   onChoiceSelected(choice: Choice) {
+    // scroll smooth to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     this.state.answerQuestion(choice);
 
     if (this.state.isQuizComplete()) {
       // Generate encoded string and navigate
       const payload = this.shareDecoder.encode(this.state.stats());
       const lang = this.state.activeLanguage();
-      this.router.navigate(['/result'], { queryParams: { p: payload, lang }});
+      this.router.navigate(['/result'], { queryParams: { p: payload, lang } });
     }
   }
 }
