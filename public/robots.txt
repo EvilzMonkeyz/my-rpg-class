@@ -8,4 +8,5 @@ User-agent: Bingbot
 Allow: /
 
 User-agent: facebookexternalhit
+Disallow: /api/
 Allow: /
