@@ -12,7 +12,7 @@ import { LanguageToggleComponent } from '../../shared/components/language-toggle
   standalone: true,
   imports: [CommonModule, LanguageToggleComponent],
   template: `
-    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4 transition-colors duration-500">
+    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4 pt-24 md:p-8 transition-colors duration-500 relative">
       <app-language-toggle></app-language-toggle>
 
       <div class="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-3xl shadow-2xl dark:shadow-purple-900/20 shadow-indigo-100 p-8 border border-gray-100 dark:border-gray-700 transition-all duration-500">

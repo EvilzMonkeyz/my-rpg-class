@@ -7,12 +7,12 @@ import { QuizStateService } from '../../../core/services/quiz-state.service';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="fixed top-6 right-6 flex items-center gap-3 z-50">
+    <div class="absolute top-4 right-4 md:top-6 md:right-6 flex items-center gap-2 md:gap-3 z-50">
       
       <!-- Theme Toggle Button -->
       <button
         (click)="state.toggleTheme()"
-        class="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-lg text-gray-700 dark:text-gray-200 hover:scale-110 active:scale-95 transition-all duration-300"
+        class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-lg text-gray-700 dark:text-gray-200 hover:scale-110 active:scale-95 transition-all duration-300"
         [attr.aria-label]="state.activeTheme() === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
       >
         <svg *ngIf="state.activeTheme() === 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -27,7 +27,7 @@ import { QuizStateService } from '../../../core/services/quiz-state.service';
       <!-- Language Toggle Button -->
       <button
         (click)="state.toggleLanguage()"
-        class="flex items-center justify-center px-4 py-2 h-12 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-lg text-gray-800 dark:text-white font-extrabold hover:scale-105 active:scale-95 transition-all duration-300 tracking-wider"
+        class="flex items-center justify-center px-3 py-1.5 h-10 md:px-4 md:py-2 md:h-12 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-lg text-gray-800 dark:text-white font-extrabold text-sm md:text-base hover:scale-105 active:scale-95 transition-all duration-300 tracking-wider"
       >
         {{ state.activeLanguage() === 'en' ? 'EN' : 'TH' }}
       </button>

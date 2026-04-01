@@ -19,7 +19,7 @@ Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Fi
   standalone: true,
   imports: [CommonModule, BaseChartDirective, LanguageToggleComponent],
   template: `
-    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 text-slate-800 dark:text-gray-100 p-4 md:p-8 flex flex-col items-center transition-colors duration-500">
+    <div class="min-h-screen bg-slate-50 dark:bg-gray-900 text-slate-800 dark:text-gray-100 p-4 pt-24 md:p-8 flex flex-col items-center transition-colors duration-500 relative">
       <app-language-toggle></app-language-toggle>
 
       @if (determinedClass && stats) {
