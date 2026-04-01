@@ -11,10 +11,10 @@ export class QuizStateService {
   private document = inject(DOCUMENT);
 
   // Core State
-  activeLanguage = signal<Language>('en');
+  activeLanguage = signal<Language>('th');
   activeTheme = signal<'dark' | 'light'>('dark');
   currentQuestionIndex = signal<number>(0);
-  
+
   // Track stats dynamically
   stats = signal<Record<RPGStat, number>>({
     STR: 0,
@@ -27,7 +27,7 @@ export class QuizStateService {
 
   // Computed Values
   isQuizComplete = computed(() => this.currentQuestionIndex() >= QUESTIONS.length);
-  
+
   highestStat = computed<RPGStat>(() => {
     const currentStats = this.stats();
     let highest: RPGStat = 'STR';
