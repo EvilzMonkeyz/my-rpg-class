@@ -10,7 +10,7 @@ import { QuizStateService } from './core/services/quiz-state.service';
 })
 export class App {
   protected readonly title = signal('my-rpg-class');
-  
+
   constructor() {
     inject(QuizStateService).initTheme();
   }
