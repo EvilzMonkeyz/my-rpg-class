@@ -243,9 +243,13 @@ export class ResultComponent implements OnInit {
           this.initChart();
           this.updateMetaTags();
         } else {
+          console.error({ error: 'Invalid payload', payload });
+          window.alert('เกิดข้อผิดพลาดในการโหลดผลลัพธ์ (ข้อมูลไม่ถูกต้อง)');
           this.router.navigate(['/']); // Invalid payload
         }
       } else {
+        console.error({ error: 'dont have payload', payload });
+        window.alert('เกิดข้อผิดพลาดในการโหลดผลลัพธ์ (ข้อมูลไม่ถูกต้อง)');
         this.router.navigate(['/']); // No payload
       }
     });
