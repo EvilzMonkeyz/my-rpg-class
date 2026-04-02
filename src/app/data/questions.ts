@@ -8,79 +8,79 @@ export const QUESTIONS: Question[] = [
   {
     id: 1,
     text: {
-      en: 'As a seasoned adventurer, your choice of weaponry defines your combat style. When surrounded by foes, what is the core tool you depend on?',
-      th: 'ในฐานะนักผจญภัยที่มากประสบการณ์ อาวุธที่คุณเลือกจะเป็นตัวกำหนดสไตล์การต่อสู้ของคุณ เมื่อถูกล้อมรอบด้วยศัตรู เครื่องมือหลักที่คุณพึ่งพาคืออะไร?'
+      en: 'You\'re completely surrounded! Quick, what\'s your go-to weapon to bust out of this mess?',
+      th: 'โดนศัตรูล้อมหมดแล้ว! วินาทีนี้อาวุธคู่กายที่คุณจะคว้ามาฟาดคืออะไร?'
     },
     choices: [
-      { text: { en: 'A massive, two-handed battleaxe capable of cleaving through armor and bone in a single, unyielding swing.', th: 'ขวานรบสองมือขนาดมหึมาที่สามารถผ่าชุดเกราะและกระดูกให้ขาดสะบั้นได้ในการเหวี่ยงเพียงครั้งเดียวที่ไม่มีใครต้านทานได้' }, stat: 'STR' },
-      { text: { en: 'A lightweight, perfectly balanced rapier that allows for blindingly fast thrusts and elegant, evasive footwork.', th: 'ดาบเรียวยาวน้ำหนักเบาที่สมดุลอย่างสมบูรณ์แบบ ซึ่งช่วยให้สามารถแทงได้เร็วอย่างไม่น่าเชื่อและมีการหลบหลีกที่สง่างาม' }, stat: 'AGI' },
-      { text: { en: 'A finely crafted composite longbow, stringing specialized arrows to strike deadly targets from the shadows.', th: 'ธนูยาวแบบประกอบขึ้นมาอย่างประณีต พร้อมกับลูกธนูชนิดพิเศษเพื่อโจมตีเป้าหมายที่ร้ายแรงจากเงามืด' }, stat: 'DEX' },
-      { text: { en: 'An ancient staff glowing with arcane energy, capable of unleashing elemental devastation upon the entire battlefield.', th: 'คทาโบราณที่เรืองแสงด้วยพลังเวทมนตร์ลึกลับ ซึ่งสามารถปลดปล่อยความพินาศของธาตุต่างๆลงบนสนามรบทั้งหมดได้' }, stat: 'INT' }
+      { text: { en: 'A massive axe. One swing and they\'re flying!', th: 'ขวานยักษ์สิ ฟาดทีเดียววงแตก กระดูกกระจาย!' }, stat: 'STR' },
+      { text: { en: 'Lightweight dual blades or a rapier. Float like a butterfly, sting like a bee.', th: 'ดาบคู่หรือเรเปียร์เบาๆ เน้นพริ้ว หลบเก่ง แทงยับ!' }, stat: 'AGI' },
+      { text: { en: 'My trusty bow. I\'m stepping back and picking them off from afar.', th: 'ธนูคู่ใจ ขอถอยไปตั้งหลักแล้วสอยร่วงทีละตัว' }, stat: 'DEX' },
+      { text: { en: 'My magic staff. Time to drop a massive AoE spell on their heads!', th: 'คทาเวทมนตร์ ขอร่ายเวทหมู่ตู้มเดียวหายวับทั้งดง!' }, stat: 'INT' }
     ]
   },
   {
     id: 2,
     text: {
-      en: 'Every hero has a defining trait that shapes their destiny. If you were forced to boast at a king’s feast, what is your true, unparalleled advantage?',
-      th: 'ฮีโร่ทุกคนมีลักษณะเด่นที่เป็นตัวกำหนดโชคชะตาของพวกเขา หากคุณถูกบังคับให้โอ้อวดในงานเลี้ยงของกษัตริย์ ข้อได้เปรียบที่แท้จริงและไม่มีใครเทียบได้ของคุณคืออะไร?'
+      en: 'You\'re at a royal banquet and everyone\'s flexing their skills. What’s your biggest flex?',
+      th: 'กลางงานเลี้ยงพระราชา ทุกคนกำลังขิงใส่กัน ถ้าต้องอวดจุดเด่นของตัวเอง คุณจะขิงเรื่องอะไร?'
     },
     choices: [
-      { text: { en: 'My unstoppable physical endurance; I can fight for days without food, sleep, or succumbing to fatal wounds.', th: 'ความอดทนทางร่างกายที่ไม่มีใครหยุดยั้งได้ของฉัน ฉันสามารถต่อสู้ได้เป็นวันๆโดยไม่ต้องกิน ไม่ต้องนอน หรือยอมพ่ายแพ้ต่อบาดแผลฉกรรจ์' }, stat: 'STR' },
-      { text: { en: 'My vast, encyclopedic knowledge of history, arcane mysteries, and the structural weaknesses of every monster known.', th: 'ความรู้สารานุกรมอันกว้างขวางของฉันเกี่ยวกับประวัติศาสตร์ ความลับทางเวทมนตร์ และจุดอ่อนทางโครงสร้างของสัตว์ประหลาดทุกตัวที่เป็นที่รู้จัก' }, stat: 'INT' },
-      { text: { en: 'My unwavering spiritual connection; I am closely guided by divine entities and intuitively sense incoming evil.', th: 'การเชื่อมต่อทางจิตวิญญาณที่ไม่สั่นคลอนของฉัน ฉันได้รับการนำทางอย่างใกล้ชิดจากสิ่งศักดิ์สิทธิ์และสัมผัสได้ถึงความชั่วร้ายที่กำลังเข้ามาโดยสัญชาตญาณ' }, stat: 'WIS' },
-      { text: { en: 'My magnetic ability to inspire others; my mere presence emboldens terrified men and brings hope to desperate situations.', th: 'ความสามารถดึงดูดใจของฉันในการสร้างแรงบันดาลใจให้ผู้อื่น เพียงแค่มีฉันอยู่ก็ทำให้คนที่กำลังหวาดกลัวกล้าหาญขึ้นมา และนำความหวังมาสู่สถานการณ์ที่สิ้นหวังได้' }, stat: 'CHA' }
+      { text: { en: 'My insane stamina! I can fight for days without breaking a sweat.', th: 'ความอึดขั้นสุด! สู้ข้ามวันข้ามคืนก็ยังไหว ไม่รู้จักคำว่าเหนื่อย' }, stat: 'STR' },
+      { text: { en: 'My big brain. I know the weakness of literally every monster out there.', th: 'ความรู้แน่นๆ ประวัติศาสตร์ ไอเทม จุดอ่อนมอนสเตอร์... ถามมาตอบได้หมด!' }, stat: 'INT' },
+      { text: { en: 'My crazy good intuition. I can always sense when things are about to go down.', th: 'สัมผัสที่หกสุดแม่นยำ ลางสังหรณ์ไม่เคยพลาด รู้ล่วงหน้าว่าอะไรจะเกิด' }, stat: 'WIS' },
+      { text: { en: 'My natural charisma. People just naturally want to follow my lead.', th: 'เสน่ห์และออร่าผู้นำ! แค่เดินเข้างาน คนก็พร้อมจะทำตามคำสั่งแล้ว' }, stat: 'CHA' }
     ]
   },
   {
     id: 3,
     text: {
-      en: 'A powerful monarch summons you and proposes an incredibly perilous, continent-spanning quest. In the throne room, you confidently reply by...',
-      th: 'กษัตริย์ผู้ทรงอำนาจเรียกตัวคุณเข้าพบและเสนอภารกิจที่อันตรายสุดขีดซึ่งครอบคลุมทั่วทั้งทวีป ในห้องโถงบัลลังก์ คุณตอบกลับอย่างมั่นใจโดย...'
+      en: 'The King just handed you a completely suicidal, save-the-world quest. How do you react?',
+      th: 'พระราชาเพิ่งมอบหมายภารกิจกู้โลกที่ดูยังไงก็ไปตายชัดๆ คุณมีรีแอคชั่นยังไง?'
     },
     choices: [
-      { text: { en: 'Elegantly dropping to one knee, offering a beautifully worded oath of fealty that leaves the entire court in awe.', th: 'คุกเข่าลงข้างหนึ่งอย่างสง่างาม กล่าวคำสาบานแห่งความจงรักภักดีด้วยถ้อยคำที่ไพเราะงดงาม ซึ่งทำให้ทั้งราชสำนักถึงกับตกตะลึง' }, stat: 'CHA' },
-      { text: { en: 'Crossing my arms and firmly demanding half of the royal treasury upfront before I even consider risking my neck.', th: 'กอดอกยืนกรานเรียกร้องค่าจ้างครึ่งหนึ่งของคลังสมบัติล่วงหน้า ก่อนที่จะยอมเอาชีวิตไปเสี่ยง' }, stat: 'STR' },
-      { text: { en: 'Requesting access to the royal archives to cross-reference maps, historical texts, and planetary alignments first.', th: 'ขอเข้าถึงหอจดหมายเหตุของราชวงศ์เพื่อตรวจสอบข้อมูล ข้ามข้อมูลแผนที่ ข้อความในประวัติศาสตร์ และการเรียงตัวของดาวเคราะห์ก่อน' }, stat: 'INT' },
-      { text: { en: 'Accepting the parchment before the king finishes speaking, and turning to leave before anyone can even blink.', th: 'รับม้วนกระดาษมาก่อนที่กษัตริย์จะตรัสจบ และหันหลังกลับเพื่อออกไปก่อนที่ใครจะทันได้กะพริบตา' }, stat: 'AGI' }
+      { text: { en: 'Take a knee and deliver a speech so epic the whole room gets chills.', th: 'คุกเข่ารับคำสั่งพร้อมกล่าวคำสาบานสุดเท่ เอาให้คนทั้งท้องพระโรงขนลุก!' }, stat: 'CHA' },
+      { text: { en: 'Cross my arms. "For a job this risky, I need half the gold upfront."', th: 'กอดอกมองหน้า แล้วบอกว่า "งานเสี่ยงตายขนาดนี้ ขอเบิกค่าจ้างล่วงหน้าครึ่งนึง"' }, stat: 'STR' },
+      { text: { en: 'Ask for library access. I need to research this before I commit to anything.', th: 'ขออนุญาตไปหมกตัวในห้องสมุดหลวงก่อนเลย ต้องหาข้อมูลเตรียมตัวให้ชัวร์' }, stat: 'INT' },
+      { text: { en: 'Snatch the quest scroll and dash out before he even finishes talking.', th: 'คว้าใบเควสต์มาแล้วพุ่งตัวออกจากห้องโถงไปเลย ไม่ต้องพูดเยอะเจ็บคอ!' }, stat: 'AGI' }
     ]
   },
   {
     id: 4,
     text: {
-      en: 'A shady merchant in the grand bazaar is trying to sell you a magical artifact, but the price is outrageously high. How do you handle the negotiation?',
-      th: 'พ่อค้าที่มีลับลมคมในในตลาดนัดขนาดใหญ่กำลังพยายามขายวัตถุเวทมนตร์ให้คุณ แต่ราคานั้นแพงหูฉี่ คุณจะจัดการกับการเจรจาต่อรองอย่างไร?'
+      en: 'A shady merchant is trying to scam you with an overpriced magic item. How do you handle it?',
+      th: 'พ่อค้าหน้าเลือดกำลังพยายามโก่งราคาไอเทมเวทมนตร์แพงเวอร์ๆ คุณจะจัดการยังไง?'
     },
     choices: [
-      { text: { en: 'Engage in a drawn-out battle of wits, using compliments, veiled promises, and smooth talking to drop the price by half.', th: 'พูดคุยชิงไหวชิงพริบอย่างยาวนาน โดยใช้คำชม คำสัญญาแอบแฝง และคำพูดที่ลื่นไหลเพื่อลดราคาลงครึ่งหนึ่ง' }, stat: 'CHA' },
-      { text: { en: 'Sense the subtle aura of the item, realize it’s partially defective, and sternly confront him with the truth to force a discount.', th: 'สัมผัสถึงออร่าแฝงของไอเท็ม ตระหนักว่ามันมีตำหนิบางส่วน และเผชิญหน้ากับเขาด้วยความจริงอย่างเข้มงวดเพื่อบังคับให้ลดราคา' }, stat: 'WIS' },
-      { text: { en: 'Keep him entirely distracted with a conversation while I subtly palm the artifact and leave a fraction of the gold in its place.', th: 'เบี่ยงเบนความสนใจของเขาด้วยการสนทนาทั้งหมด ในขณะที่ฉันแอบหยิบวัตถุนั้นมาอย่างแนบเนียน และทิ้งเศษทองจำนวนหนึ่งไว้แทน' }, stat: 'AGI' },
-      { text: { en: 'Slam my hand hard on his wooden stall, cracking the surface, and demand he give me a reasonable price immediately.', th: 'ทุบมือลงบนแผงไม้อย่างแรงจนพื้นผิวแตกร้าว และเรียกร้องให้เขาลดราคาให้ฉันในระดับที่สมเหตุสมผลเดี๋ยวนี้' }, stat: 'STR' }
+      { text: { en: 'Smooth-talk and charm him until he literally halves the price.', th: 'ใช้สกิลคุยเก่ง หว่านล้อมบวกอ้อนนิดๆ จนยอมใจอ่อนลดราคาให้ครึ่งนึง' }, stat: 'CHA' },
+      { text: { en: 'Point out a hidden flaw in the item and use it to force a heavy discount.', th: 'จับโป๊ะได้ว่าไอเทมมีตำหนิ เลยเอาความจริงมาขู่ให้เขายอมลดราคา' }, stat: 'WIS' },
+      { text: { en: 'Keep him talking while I smoothly pocket it and leave a few cheap coins behind.', th: 'ชวนคุยเนียนๆ เบี่ยงเบนความสนใจ แล้วมือไวฉกของมาพร้อมวางเศษเงินทิ้งไว้' }, stat: 'AGI' },
+      { text: { en: 'Slam the table hard and glare at him until he gives me a fair price.', th: 'ทุบโต๊ะดังปัง! จ้องหน้าเขม็ง แล้วบังคับให้บอกราคาที่ยุติธรรมมาเดี๋ยวนี้' }, stat: 'STR' }
     ]
   },
   {
     id: 5,
     text: {
-      en: 'An arrogant noble aggressively challenges you to a duel at a grand masquerade ball after a spilled drink. The crowd goes silent.',
-      th: 'ขุนนางผู้เย่อหยิ่งท้าดวลคุณอย่างก้าวร้าวในงานเต้นรำสวมหน้ากากอันยิ่งใหญ่หลังจากทำเครื่องดื่มหก ฝูงชนเงียบกริบ'
+      en: 'A drunk, arrogant noble challenges you to a duel at a fancy party. The whole room goes quiet.',
+      th: 'ขุนนางขี้เมาหาเรื่องท้าดวลกลางงานปาร์ตี้หรู คนทั้งงานเงียบกริบและหันมามอง คุณจะเอาไง?'
     },
     choices: [
-      { text: { en: 'Notice he is heavily intoxicated, gently redirect his anger with a philosophical proverb, and calmly walk away without bloodshed.', th: 'สังเกตเห็นว่าเขากำลังเมาหนัก จึงเบี่ยงเบนความโกรธของเขาอย่างนุ่มนวลด้วยสุภาษิตเชิงปรัชญา และเดินจากไปอย่างใจเย็นโดยไม่มีการนองเลือด' }, stat: 'WIS' },
-      { text: { en: 'Accept the duel, then flawlessly disarm him with a blindingly fast parry that sends his rapier flying across the ballroom.', th: 'ยอมรับการดวล จากนั้นก็ปลดอาวุธเขาอย่างไร้ที่ติด้วยการปัดป้องที่เร็วปานสายฟ้าแลบจนดาบของเขากระเด็นข้ามห้องโถงไป' }, stat: 'DEX' },
-      { text: { en: 'Laugh charmingly, buy him another extremely expensive glass of wine, and turn the tense moment into a toast with the cheering crowd.', th: 'หัวเราะอย่างมีเสน่ห์ ซื้อไวน์แก้วใหม่ที่แพงมากๆให้เขา และเปลี่ยนช่วงเวลาตึงเครียดให้กลายเป็นการชนแก้วดื่มฉลองร่วมกับฝูงชนที่กำลังส่งเสียงเชียร์' }, stat: 'CHA' },
-      { text: { en: 'Sidestep his clumsy initial lunge entirely, performing a perfect backflip to humiliate him while untouched.', th: 'ก้าวหลบการพุ่งโจมตีอันเงอะงะของเขาอย่างหมดจด พร้อมตีลังกากลับหลังอย่างสมบูรณ์แบบเพื่อหยามเกียรติเขาโดยไม่ถูกแตะต้องแม้แต่ปลายผม' }, stat: 'AGI' }
+      { text: { en: 'Realize he\'s just drunk, drop a wise quote, and calmly walk away.', th: 'ปล่อยเบลอคนเมา พูดเตือนสติหล่อๆ ไปประโยคนึงแล้วเดินหนีไปเลย' }, stat: 'WIS' },
+      { text: { en: 'Accept, then disarm him in half a second with a blindingly fast move.', th: 'รับคำท้า แล้วปัดดาบเขาหลุดมือกระเด็นไปไกลด้วยความไวแสง เอาให้อาย!' }, stat: 'DEX' },
+      { text: { en: 'Laugh it off, buy him a top-tier drink, and turn the whole thing into a toast.', th: 'หัวเราะชิลๆ เลี้ยงเหล้าแพงๆ คืนแก้วนึง เปลี่ยนเรื่องบาดหมางให้เป็นงานฉลอง' }, stat: 'CHA' },
+      { text: { en: 'Effortlessly dodge his sloppy attacks and do a backflip just to show off.', th: 'ยืนหลบการโจมตีเงอะงะของเขาแบบพริ้วๆ แถมนอกรอบตีลังกาโชว์ไปอีกที' }, stat: 'AGI' }
     ]
   },
   {
     id: 6,
     text: {
-      en: 'The city guard detains your party at the gates, demanding an exorbitant "toll" that is clearly a bribe. Your coin purse is nearly empty. How do you resolve this situation?',
-      th: 'ทหารยามของเมืองหยุดปาร์ตี้ของคุณไว้ที่ประตูเมือง โดยเรียกร้อง "ค่าผ่านทาง" ที่สูงลิ่วซึ่งเห็นได้ชัดว่าเป็นการติดสินบน กระเป๋าเงินของคุณแทบจะว่างเปล่า คุณจะแก้ไขสถานการณ์นี้อย่างไร?'
+      en: 'Crooked city guards are demanding a massive "toll" to let you in, but you\'re broke.',
+      th: 'ทหารยามกังฉินเรียกเก็บ "ค่าผ่านทาง" สุดแพง แต่คุณบักโกรกไม่มีเงินสักแดง จะผ่านไปยังไง?'
     },
     choices: [
-      { text: { en: 'Step forward, crack my knuckles, and physically intimidate the guards until they back down out of sheer terror.', th: 'ก้าวไปข้างหน้า หักข้อนิ้ว และข่มขู่ยามด้วยท่าทีคุกคามจนกว่าพวกเขาจะยอมถอยด้วยความหวาดกลัวสุดขีด' }, stat: 'STR' },
-      { text: { en: 'Flash a charismatic smile, compliment the captain\'s armor, and spin a tragic, believable tale to earn their pity.', th: 'ยิ้มอย่างมีเสน่ห์ ชื่นชมชุดเกราะของหัวหน้ายาม และแต่งเรื่องเล่าที่น่าเศร้าและสมจริงเพื่อให้พวกเขาเห็นใจ' }, stat: 'CHA' },
-      { text: { en: 'Create a minor distraction nearby and slip through the open gates unnoticed while the guards investigate.', th: 'สร้างความวุ่นวายเล็กน้อยบริเวณใกล้เคียงและแอบผ่านประตูที่เปิดอยู่โดยไม่มีใครสังเกตเห็นขณะที่ยามไปตรวจสอบ' }, stat: 'AGI' },
-      { text: { en: 'Calmly cite the kingdom\'s exact legal statutes and point out the severe penalties for extorting royal citizens.', th: 'อ้างถึงกฎหมายที่ถูกต้องของอาณาจักรอย่างใจเย็น และชี้ให้เห็นถึงบทลงโทษที่รุนแรงในการกรรโชกทรัพย์ประชาชนของกษัตริย์' }, stat: 'INT' }
+      { text: { en: 'Crack my knuckles and look so intimidating they let me pass out of fear.', th: 'ยืนเบ่งกล้าม หักข้อนิ้วข่มขู่ จนยามกลัวหัวหดแล้วยอมเปิดทางให้เอง' }, stat: 'STR' },
+      { text: { en: 'Smile, compliment them, and make up a sad story so they pity me and let me in.', th: 'ยิ้มหวาน ชมชุดเกราะยามเท่จัง แล้วแต่งเรื่องดราม่าเรียกน้ำตาจนยามเห็นใจ' }, stat: 'CHA' },
+      { text: { en: 'Throw a rock to distract them and quietly slip through the gates.', th: 'โยนหินไปอีกทางสร้างความวุ่นวาย แล้วแอบย่องเนียนๆ ผ่านประตูไป' }, stat: 'AGI' },
+      { text: { en: 'Calmly quote the kingdom\'s extortion laws and the harsh penalties they\'ll face.', th: 'งัดข้อกฎหมายอาณาจักรมาอ้างเป๊ะๆ พร้อมขู่กลับเรื่องโทษของการรีดไถ' }, stat: 'INT' }
     ]
   },
 
@@ -90,66 +90,66 @@ export const QUESTIONS: Question[] = [
   {
     id: 7,
     text: {
-      en: 'After a long, grueling journey, you finally have a night to yourself at the bustling Golden Boar Tavern. How do you choose to spend your evening?',
-      th: 'หลังจากการเดินทางที่ยาวนานและเหน็ดเหนื่อย ในที่สุดคุณก็มีเวลาพักผ่อนในค่ำคืนหนึ่งที่โรงเตี๊ยมหมูป่าทองคำที่แสนคึกคัก คุณเลือกที่จะใช้เวลายามเย็นของคุณอย่างไร?'
+      en: 'After weeks of traveling, you finally hit a lively tavern. How are you spending the night?',
+      th: 'หลังเดินทางสมบุกสมบันมานาน ในที่สุดก็เจอโรงเตี๊ยมคึกคักๆ คืนนี้คุณจะทำอะไร?'
     },
     choices: [
-      { text: { en: 'Challenge the largest patron in the room to an arm-wrestling contest, slamming my fist on the table to show dominance.', th: 'ท้าทายลูกค้าตัวใหญ่ที่สุดในร้านเพื่องัดข้อ โดยทุบกำปั้นลงบนโต๊ะเพื่อแสดงความเหนือกว่า' }, stat: 'STR' },
-      { text: { en: 'Participate in a high-stakes knife-throwing game, relying on my perfect hand-eye coordination to win a pile of gold.', th: 'เข้าร่วมการแข่งขันปามีดที่มีเดิมพันสูง โดยพึ่งพาการทำงานประสานกันของสายตาและมือที่สมบูรณ์แบบเพื่อคว้าเงินก้อนโต' }, stat: 'DEX' },
-      { text: { en: 'Retreat to a quiet, dimly lit corner with a dusty tome, eager to lose myself in tales of forgotten history and magic.', th: 'หลบไปที่มุมเงียบๆและมีแสงสลัวพร้อมกับหนังสือเก่าๆฝุ่นเขรอะ เพื่อดำดิ่งลงไปในเรื่องราวของประวัติศาสตร์และเวทมนตร์ที่ถูกลืม' }, stat: 'INT' },
-      { text: { en: 'Take an instrument from the wall, stand on a table, and regale the entire tavern with an epic ballad of our recent triumphs.', th: 'หยิบเครื่องดนตรีจากผนัง ยืนบนโต๊ะ และให้ความบันเทิงกับคนทั้งโรงเตี๊ยมด้วยบทเพลงมหากาพย์เกี่ยวกับชัยชนะล่าสุดของเรา' }, stat: 'CHA' }
+      { text: { en: 'Challenge the biggest guy there to an arm-wrestling match. Time to show off.', th: 'ท้าพี่เบิ้มที่ตัวใหญ่ที่สุดในร้านงัดข้อ โชว์ความแข็งแกร่งให้เป็นที่ประจักษ์!' }, stat: 'STR' },
+      { text: { en: 'Join a high-stakes knife-throwing game. My aim is too good to lose.', th: 'ลงแข่งปามีดเดิมพันด้วยเงินก้อนโต มั่นใจว่าความแม่นยำนี้กินเรียบแน่นอน' }, stat: 'DEX' },
+      { text: { en: 'Find a quiet corner with a warm drink and dive into a good book of magic lore.', th: 'หามุมเงียบๆ สั่งเครื่องดื่มอุ่นๆ แล้วนั่งอ่านหนังสือเวทมนตร์เล่มโปรด' }, stat: 'INT' },
+      { text: { en: 'Grab a lute, jump on a table, and perform a legendary song for the whole crowd.', th: 'หยิบกีตาร์กระโดดขึ้นโต๊ะ ร้องเพลงเล่าวีรกรรมให้คนทั้งร้านฟังอย่างเมามันส์' }, stat: 'CHA' }
     ]
   },
   {
     id: 8,
     text: {
-      en: 'You find a wounded wolf pup caught in a cruel hunter\'s snare in the frozen tundra. The pack is watching you suspiciously from the snowy ridge.',
-      th: 'คุณพบลูกหมาป่าที่บาดเจ็บติดอยู่ในกับดักของนายพรานใจร้ายในทุ่งน้ำแข็ง ฝูงของมันกำลังจ้องมองคุณด้วยความระแวงจากสันเขาที่ปกคลุมด้วยหิมะ'
+      en: 'You find a trapped wolf pup. The angry mother and her pack are watching from a hill.',
+      th: 'เจอลูกหมาป่าติดกับดักพรานป่า โดยมีแม่หมาป่าและฝูงของมันจ้องเขม็งอยู่บนเนินเขา เอาไงดี?'
     },
     choices: [
-      { text: { en: 'Approach slowly, lower my gaze to show non-aggression, and hum a calming forest tone before delicately untangling the snare.', th: 'เข้าใกล้ตัวช้าๆ ลดสายตาลงเพื่อแสดงว่าไม่เป็นศัตรู และฮัมเพลงทำนองป่าที่ผ่อนคลายก่อนจะแก้กับดักอย่างประณีต' }, stat: 'WIS' },
-      { text: { en: 'Quickly and precisely slice the snare wire with a single flick of my wrist before the pup even realizes what happened.', th: 'ใช้การสะบัดข้อมือเพียงครั้งเดียวเพื่อตัดลวดกับดักอย่างรวดเร็วและแม่นยำก่อนที่ลูกหมาป่าจะทันรู้ตัวด้วยซ้ำ' }, stat: 'DEX' },
-      { text: { en: 'Speak in a firm but soothing voice, gesturing to the watching pack that I bear them no ill will as I free their young.', th: 'พูดด้วยน้ำเสียงที่หนักแน่นแต่อ่อนโยน พร้อมกับส่งสัญญาณให้ฝูงที่เฝ้าดูอยู่รู้ว่าฉันไม่ได้มีเจตนาร้ายขณะที่ปล่อยลูกของพวกมัน' }, stat: 'CHA' },
-      { text: { en: 'Dodge past the snarling pup\'s defensive snaps, using my reflexes to pin it safely down while I release the trap.', th: 'หลบการกัดเพื่อป้องกันตัวของลูกหมาป่าที่กำลังขู่คำราม โดยใช้ปฏิกิริยาตอบสนองเพื่อกดมันลงอย่างปลอดภัยในขณะที่ฉันปลดกับดัก' }, stat: 'AGI' }
+      { text: { en: 'Crouch down, hum a soothing tune, and gently untangle the poor thing.', th: 'ค่อยๆ นั่งลง ร้องเพลงกล่อมเบาๆ ให้สัตว์ป่าสงบลง แล้วค่อยๆ แก้มัดให้' }, stat: 'WIS' },
+      { text: { en: 'Whip out a knife and precisely snap the snare wire in a split second.', th: 'สะบัดข้อมือใช้มีดตัดลวดกับดักขาดฉับอย่างแม่นยำก่อนที่ลูกหมาจะทันขยับตัว' }, stat: 'DEX' },
+      { text: { en: 'Speak softly and keep my hands visible to show the pack I\'m a friend.', th: 'พูดด้วยน้ำเสียงอ่อนโยนและยกมือขึ้นสองข้าง ส่งสัญญาณให้ฝูงรู้ว่าเรามาดี' }, stat: 'CHA' },
+      { text: { en: 'Dodge the panicked pup\'s bites, pin it down quickly, and release the trap.', th: 'เอี้ยวตัวหลบลูกหมาที่แว้งกัดเพราะตกใจ แล้วล็อคตัวมันไว้แน่นๆ เพื่อปลดกับดัก' }, stat: 'AGI' }
     ]
   },
   {
     id: 9,
     text: {
-      en: 'Your path is completely blocked by a collapsed bridge spanning a seemingly bottomless chasm. The wind howls violently. What is your method for crossing?',
-      th: 'เส้นทางของคุณถูกขวางกั้นอย่างสมบูรณ์โดยสะพานที่พังทลาย ซึ่งทอดข้ามเหวลึกที่ดูเหมือนจะไม่มีก้นเหว เสียงลมพัดกรรโชกแรง คุณมีวิธีข้ามไปได้อย่างไร?'
+      en: 'A bridge is broken, leaving a massive gap over a bottomless pit. How are you getting across?',
+      th: 'สะพานขาด ขวางหน้าคือหุบเหวลึกที่มองไม่เห็นก้น คุณจะข้ามไปอีกฝั่งยังไง?'
     },
     choices: [
-      { text: { en: 'Back up, focus my leg strength, and take a massive, gravity-defying running leap directly across the wide gap.', th: 'ถอยหลัง รวบรวมพลังที่ขา และพุ่งกระโดดวิ่งข้ามช่องว่างขนาดใหญ่นั้นเพื่อเอาชนะแรงโน้มถ่วง' }, stat: 'STR' },
-      { text: { en: 'Nimblly walk across the single, swaying rope that remains connected, keeping my arms perfectly balanced.', th: 'เดินข้ามเชือกเส้นเดียวที่ยังคงเชื่อมต่ออยู่ซึ่งแกว่งไปมาอย่างคล่องแคล่ว โดยรักษาสมดุลของแขนอย่างสมบูรณ์แบบ' }, stat: 'AGI' },
-      { text: { en: 'Throw a grappling hook with absolute precision to latch onto a sturdy gargoyle on the other side, then swing across.', th: 'ขว้างตะขอเกี่ยวด้วยความแม่นยำขั้นสุดเพื่อเกาะกับรูปปั้นการ์กอยล์ที่แข็งแรงบนอีกฝั่ง แล้วแกว่งตัวข้ามไป' }, stat: 'DEX' },
-      { text: { en: 'Read an incantation to manipulate the air currents around me, allowing me to safely levitate over the abyss.', th: 'ร่ายเวทมนตร์เพื่อควบคุมกระแสลมรอบตัวฉัน ช่วยให้ฉันลอยข้ามหุบเหวไปได้อย่างปลอดภัย' }, stat: 'INT' }
+      { text: { en: 'Back up, get a running start, and just make a massive leap of faith!', th: 'ถอยหลังไปตั้งหลักไกลๆ แล้วสับตีนแตกกระโดดข้ามไปเลย!' }, stat: 'STR' },
+      { text: { en: 'Keep my balance perfectly and just tightrope-walk across the one remaining rope.', th: 'กางแขนรักษาสมดุล แล้วเดินไต่เชือกเส้นเดียวที่เหลืออยู่ข้ามไปชิลๆ' }, stat: 'AGI' },
+      { text: { en: 'Throw a grappling hook perfectly onto a sturdy rock and swing on over.', th: 'ปาตะขอเกี่ยวข้ามไปคล้องโขดหินฝั่งตรงข้ามให้แน่นเป๊ะ แล้วโหนสลิงข้ามไป' }, stat: 'DEX' },
+      { text: { en: 'Cast a quick levitation spell and gracefully float my way across.', th: 'ร่ายมนตร์ควบคุมลม แล้วค่อยๆ ลอยตัวลอยข้ามเหวไปแบบสวยๆ' }, stat: 'INT' }
     ]
   },
   {
     id: 10,
     text: {
-      en: 'While attempting to sneak across a warlord\'s sleeping camp, an alert guard dog suddenly spots you and begins to bark loudly.',
-      th: 'ขณะที่พยายามแอบผ่านค่ายที่หลับใหลของขุนศึก สุนัขเฝ้ายามที่ตื่นตัวตัวหนึ่งก็สังเกตเห็นคุณและเริ่มเห่าเสียงดัง'
+      en: 'You\'re sneaking through an enemy base when a guard dog spots you. It\'s about to bark!',
+      th: 'กำลังย่องเบาเข้าค่ายศัตรู แต่ดันมีหมาเฝ้ายามหันมาเห็นและเตรียมเห่าซะงั้น!'
     },
     choices: [
-      { text: { en: 'Hold absolutely still, focus my aura to exude profound calmness, and telepathically soothe the animal back to sleep.', th: 'ยืนนิ่งสนิท รวบรวมออร่าของฉันเพื่อแผ่ความสงบอย่างลึกซึ้ง และปลอบประโลมสัตว์ตัวนั้นให้กลับไปหลับทางกระแสจิต' }, stat: 'WIS' },
-      { text: { en: 'Flick a heavy piece of dried meat precisely into the thick bushes far away to instantly redirect its noise and attention.', th: 'ดีดเนื้อแห้งชิ้นหนักๆเข้าไปในพุ่มไม้หนาทึบที่อยู่ไกลออกไปอย่างแม่นยำ เพื่อเปลี่ยนทิศทางเสียงและความสนใจของมันในทันที' }, stat: 'DEX' },
-      { text: { en: 'Sprint into the dark tree line with blinding speed before any groggy mercenaries can even crawl out of their tents.', th: 'วิ่งสปรินต์เข้าไปในแนวต้นไม้ที่มืดมิดด้วยความเร็วแสง ก่อนที่ทหารรับจ้างที่กำลังงัวเงียจะทันคลานออกมาจากเต็นท์ด้วยซ้ำ' }, stat: 'AGI' },
-      { text: { en: 'Grapple the massive war hound to the ground instantly, clamping its jaw shut with sheer muscular strength until it submits.', th: 'พุ่งเข้าจับสุนัขสงครามร่างยักษ์กดลงกับพื้นทันที โดยใช้พละกำลังของกล้ามเนื้อล้วนๆบีบขากรรไกรของมันไว้จนกว่ามันจะยอมจำนน' }, stat: 'STR' }
+      { text: { en: 'Freeze completely and use my aura to psychically soothe it back to sleep.', th: 'ยืนนิ่งๆ ส่งกระแสจิตแผ่ออร่าความสงบ กล่อมให้มันกลับไปนอนหลับปุ๋ย' }, stat: 'WIS' },
+      { text: { en: 'Perfectly toss a piece of meat into some far bushes so it chases that instead.', th: 'ดีดชิ้นเนื้อไปตกที่พุ่มไม้ไกลๆ อย่างแม่นยำ เพื่อเบี่ยงเบนความสนใจมันทันที' }, stat: 'DEX' },
+      { text: { en: 'Dash into the nearest shadows so fast it doesn\'t even know what it saw.', th: 'ใส่เกียร์หมา! พุ่งตัวหลบเข้าเงามืดด้วยความเร็วแสงก่อนที่มันจะทันอ้าปากเห่า' }, stat: 'AGI' },
+      { text: { en: 'Tackle the huge dog to the ground and physically hold its jaws shut.', th: 'พุ่งเข้าล็อคคอหมายักษ์ กดลงพื้นและปิดปากมันไว้ด้วยแรงตบมหาศาล' }, stat: 'STR' }
     ]
   },
   {
     id: 11,
     text: {
-      en: 'While traveling through the Whispering Woods, your party is ambushed by a towering, corrupted Treant. The beast roars, causing the ground to shake. What is your immediate reaction in combat?',
-      th: 'ขณะเดินทางผ่านป่ากระซิบ ปาร์ตี้ของคุณถูกซุ่มโจมตีโดยทรีแอนท์ยักษ์ที่ถูกครอบงำด้วยความมืด สัตว์ร้ายคำรามจนแผ่นดินสั่นสะเทือน ปฏิกิริยาตอบสนองแรกของคุณในการต่อสู้คืออะไร?'
+      en: 'A massive, evil tree-monster (Treant) ambushes you, shaking the ground. Your first move?',
+      th: 'ปีศาจต้นไม้ยักษ์โผล่มาซุ่มโจมตีจนแผ่นดินสั่นสะเทือน ปฏิกิริยาแรกของคุณคือ?'
     },
     choices: [
-      { text: { en: 'Let out a fierce battle cry and charge head-on to draw its aggression and protect my companions.', th: 'เปล่งเสียงร้องคำรามอย่างดุเดือดและพุ่งเข้าชนตรงๆเพื่อดึงความสนใจและปกป้องเพื่อนร่วมทางของฉัน' }, stat: 'STR' },
-      { text: { en: 'Quickly scale the nearest tree to gain the high ground and rain down precise, deadly projectiles from afar.', th: 'ปีนขึ้นต้นไม้ที่ใกล้ที่สุดอย่างรวดเร็วเพื่อให้ได้เปรียบทางความสูงและระดมยิงขีปนาวุธที่แม่นยำและร้ายแรงจากระยะไกล' }, stat: 'DEX' },
-      { text: { en: 'Immediately cast a wide protective barrier over the party to absorb the incoming shockwave and heal any injuries.', th: 'ร่ายบาเรียป้องกันขนาดใหญ่ครอบคลุมปาร์ตี้ทันทีเพื่อดูดซับแรงกระแทกและรักษาอาการบาดเจ็บ' }, stat: 'WIS' },
-      { text: { en: 'Sing an ancient, soothing melody that resonates with the forest, attempting to calm the corrupted beast\'s rage.', th: 'ร้องเพลงทำนองโบราณอันเงียบสงบที่สอดคล้องกับผืนป่า เพื่อพยายามสงบความเกรี้ยวกราดของสัตว์ร้ายที่ถูกครอบงำ' }, stat: 'CHA' }
+      { text: { en: 'Scream a battle cry and charge right at it to draw its aggro off my team.', th: 'แหกปากคำราม! แล้วพุ่งเข้าแทงก์ชนตรงๆ เพื่อดึงความสนใจปกป้องเพื่อน' }, stat: 'STR' },
+      { text: { en: 'Scramble up the nearest safe tree to get the high ground and start sniping.', th: 'ไต่ขึ้นต้นไม้ที่ใกล้ที่สุดอย่างไว เพื่อหาจุดซุ่มยิงทำดาเมจจากมุมสูง' }, stat: 'DEX' },
+      { text: { en: 'Instantly throw up a massive magic shield to protect the party and absorb the hit.', th: 'กางบาเรียเวทมนตร์ครอบเพื่อนทั้งปาร์ตี้ทันที เพื่อกันแรงกระแทกและช่วยฮีล' }, stat: 'WIS' },
+      { text: { en: 'Start singing an ancient forest song, hoping to calm the beast\'s corrupted rage.', th: 'ร้องเพลงโบราณแห่งพงไพร เพื่อพยายามชำระล้างและเรียกสติปีศาจกลับมา' }, stat: 'CHA' }
     ]
   },
 
@@ -159,79 +159,79 @@ export const QUESTIONS: Question[] = [
   {
     id: 12,
     text: {
-      en: 'Your quest leads you to the entrance of a pitch-black, sunless subterranean cavern. Visibility is zero. How do you safely lead the expedition forward?',
-      th: 'ภารกิจของคุณนำพาคุณไปถึงปากทางเข้าถ้ำใต้ดินที่มืดมิดไร้แสงอาทิตย์ ทัศนวิสัยเป็นศูนย์ คุณจะนำคณะสำรวจเดินหน้าต่อไปอย่างปลอดภัยได้อย่างไร?'
+      en: 'You just entered a dungeon that\'s pitch black. You literally can\'t see your hand. How do you lead?',
+      th: 'เดินเข้ามาในดันเจี้ยนที่มืดตึ๊ดตื๋อ มองไม่เห็นแม้มือตัวเอง คุณจะนำทางเพื่อนยังไง?'
     },
     choices: [
-      { text: { en: 'Mutter an incantation to summon a glowing orb of pure magical light that floats above your head, illuminating the abyss.', th: 'ร่ายคาถาเพื่ออัญเชิญลูกแก้วแสงเวทมนตร์บริสุทธิ์ที่สว่างไสวให้ลอยอยู่เหนือหัวของคุณ เพื่อส่องสว่างหุบเหวลึก' }, stat: 'INT' },
-      { text: { en: 'Close my eyes, plant my feet on the stone, and rely on sensing minute shifts in air currents and echoing water drops.', th: 'หลับตาลง วางเท้าให้มั่นบนหิน และพึ่งพาการสัมผัสการเปลี่ยนแปลงเล็กๆน้อยๆของกระแสลมและเสียงหยดน้ำที่สะท้อนมา' }, stat: 'WIS' },
-      { text: { en: 'Take point, stepping incredibly lightly and using my sensitive fingertips to feel the walls and floor for concealed tripwires.', th: 'เป็นคนนำทาง โดยก้าวเท้าอย่างแผ่วเบาอย่างเหลือเชื่อ และใช้ปลายนิ้วที่อ่อนไหวสัมผัสกำแพงและพื้นเพื่อหาเส้นลวดกับดักที่ซ่อนอยู่' }, stat: 'DEX' },
-      { text: { en: 'Light a massive wooden torch and boldly march forward, ready to smash any creature foolish enough to jump out.', th: 'จุดคบเพลิงไม้ขนาดใหญ่และเดินหน้าต่อไปอย่างกล้าหาญ พร้อมที่จะทุบทำลายสิ่งมีชีวิตใดๆก็ตามที่โง่พอจะกระโจนออกมา' }, stat: 'STR' }
+      { text: { en: 'Cast a spell to create a glowing orb of light that floats above us.', th: 'เสกเวทสร้างลูกแก้วแสงสว่างจ้า ลอยเหนือหัวนำทางไปเลย สว่างไสว!' }, stat: 'INT' },
+      { text: { en: 'Close my eyes, focus my senses, and navigate by feeling the air and hearing echoes.', th: 'หลับตา ตั้งสมาธิ ฟังเสียงหยดน้ำและสัมผัสกระแสลมเอาว่าควรเดินไปทางไหน' }, stat: 'WIS' },
+      { text: { en: 'Take the lead, stepping incredibly softly and feeling for tripwires with my hands.', th: 'อาสาเดินนำหน้าสุด ย่องเบาๆ แล้วใช้ปลายนิ้วคลำหาเส้นลวดกับดักตามพื้น' }, stat: 'DEX' },
+      { text: { en: 'Light the biggest torch I have and march forward. If anything jumps out, I hit it.', th: 'จุดคบเพลิงอันเบ้อเริ่ม ถือเดินนำหน้าแบบห้าวๆ ใครโผล่มาทุบยับ!' }, stat: 'STR' }
     ]
   },
   {
     id: 13,
     text: {
-      en: 'Deep within the Ruined Bastion, you discover an ornate, heavy iron door sealed by ancient mechanisms. You can hear faint, menacing whispers echoing from the other side. How do you bypass this obstacle?',
-      th: 'ลึกลงไปในป้อมปราการที่พังทลาย คุณพบประตูล็อคเหล็กขนาดใหญ่ที่ถูกปิดผนึกด้วยกลไกโบราณ คุณได้ยินเสียงกระซิบอันน่าสะพรึงกลัวดังก้องมาจากอีกฝั่ง คุณจะผ่านอุปสรรคนี้ไปได้อย่างไร?'
+      en: 'A massive iron door blocks your way. You hear creepy whispers coming from the other side.',
+      th: 'ประตูเหล็กบานยักษ์ขวางทางอยู่ แถมมีเสียงกระซิบหลอนๆ ดังมาจากข้างใน จะเปิดยังไงดี?'
     },
     choices: [
-      { text: { en: 'Grip my weapon with both hands and smash the hinges with overwhelming force until the door gives way.', th: 'จับอาวุธด้วยสองมือและทุบบานพับด้วยพละกำลังมหาศาลจนกว่าประตูจะพังทลายลง' }, stat: 'STR' },
-      { text: { en: 'Carefully study the runes etched into the metal to decipher the magical sequence required to unlock it safely.', th: 'ศึกษารูนที่สลักไว้บนโลหะอย่างระมัดระวังเพื่อถอดรหัสลำดับเวทมนตร์ที่ใช้ในการปลดล็อคอย่างปลอดภัย' }, stat: 'INT' },
-      { text: { en: 'Pull out my lockpicking kit and meticulously disarm the internal tumblers without making a single sound.', th: 'หยิบชุดสะเดาะกุญแจออกมาและจัดการปลดสลักภายในอย่างพิถีพิถันโดยไม่ให้เกิดเสียงแม้แต่น้อย' }, stat: 'AGI' },
-      { text: { en: 'Close my eyes, attune my senses to the lingering spirits around the door, and humbly ask them for safe passage.', th: 'หลับตาลง ปรับประสาทสัมผัสให้เข้ากับวิญญาณที่วนเวียนอยู่รอบประตู และขอร้องพวกเขาอย่างนอบน้อมเพื่อขอทางผ่าน' }, stat: 'WIS' }
+      { text: { en: 'Grip my weapon and just smash the hinges until the door completely breaks down.', th: 'กำอาวุธให้แน่น แล้วง้างฟาดใส่บานพับประตูสุดแรงจนมันพังทลายลงมา!' }, stat: 'STR' },
+      { text: { en: 'Analyze the glowing runes on the metal and figure out the puzzle to unlock it.', th: 'สังเกตอักขระเวทมนตร์ที่สลักไว้ แล้วลองถอดรหัสเพื่อปลดล็อคอย่างผู้มีปัญญา' }, stat: 'INT' },
+      { text: { en: 'Pull out my lockpick set and silently crack the mechanism without making a sound.', th: 'ควักอุปกรณ์สะเดาะกุญแจออกมา ค่อยๆ เขี่ยกลไกปลดล็อคแบบไร้เสียงสุดๆ' }, stat: 'AGI' },
+      { text: { en: 'Close my eyes, connect with the creepy spirits, and politely ask them to let us pass.', th: 'หลับตา สื่อสารกับดวงวิญญาณแถวนั้น เพื่อขออนุญาตผ่านทางอย่างสันติ' }, stat: 'WIS' }
     ]
   },
   {
     id: 14,
     text: {
-      en: 'A labyrinth\'s corridor begins filling with toxic sand. The mechanism to open the escape door is on the ceiling, far out of reach.',
-      th: 'ทางเดินของเขาวงกตเริ่มเต็มไปด้วยทรายพิษ กลไกในการเปิดประตูหนีภัยอยู่บนเพดานและอยู่ไกลเกินเอื้อม'
+      en: 'Oh no, a trap! The room is filling with toxic sand, and the stop button is high up on the ceiling.',
+      th: 'ซวยแล้ว เหยียบกับดัก! ห้องกำลังเต็มไปด้วยทรายพิษ แต่ปุ่มหยุดดันอยู่สูงลิบเลย ทำไงดี?'
     },
     choices: [
-      { text: { en: 'Connect to the earth elementals within the sand, whispering an ancient plea to slow the flow and harden the surface for a ramp.', th: 'เชื่อมต่อกับภูตแห่งดินในทราย และกระซิบคำวิงวอนโบราณเพื่อชะลอการไหลและทำให้พื้นผิวแข็งตัวเป็นทางลาด' }, stat: 'WIS' },
-      { text: { en: 'Throw a perfectly balanced dagger to hit the microscopic pressure plate of the ceiling mechanism precisely from below.', th: 'ขว้างมีดสั้นที่สมดุลอย่างสมบูรณ์แบบเพื่อโจมตีแผ่นตราชูขนาดเล็กของกลไกบนเพดานจากเบื้องล่างอย่างแม่นยำ' }, stat: 'DEX' },
-      { text: { en: 'Command the party with unyielding authority, organizing a rapid, systematic human pyramid to reach the mechanism before the sand rises.', th: 'ใช้วาทศิลป์และความเป็นผู้นำสั่งการอย่างเด็ดขาด ให้ทุกคนในปาร์ตี้ต่อตัวกันขึ้นไปจนถึงสวิตช์อย่างเป็นระบบและรวดเร็วก่อนที่ทรายจะท่วม' }, stat: 'CHA' },
-      { text: { en: 'Use the rapidly falling sand piles as temporary stepping stones, parkouring erratically up the walls to hit the switch myself.', th: 'ใช้กองทรายที่ตกลงมาอย่างรวดเร็วเป็นแท่นเหยียบชั่วคราว กระโดดไต่กำแพงอย่างบ้าคลั่งเพื่อไปกดสวิตช์ด้วยตัวเอง' }, stat: 'AGI' }
+      { text: { en: 'Beg the earth spirits to harden the sand into a ramp so we can just walk up to it.', th: 'สวดอ้อนวอนภูตแห่งดิน ขอให้ทรายชะลอตัวและแข็งตัวกลายเป็นบันไดให้เดินขึ้นไป' }, stat: 'WIS' },
+      { text: { en: 'Aim perfectly and throw a dagger straight up to hit the tiny ceiling button.', th: 'เล็งให้เป๊ะที่สุด แล้วปามีดสั้นขึ้นไปกระแทกปุ่มสวิตช์บนเพดานให้โดนจังๆ' }, stat: 'DEX' },
+      { text: { en: 'Yell at everyone to quickly form a human pyramid so we can reach the top in time.', th: 'ตะโกนสั่งการเพื่อนๆ ให้รีบต่อตัวกันเป็นพีระมิดมนุษย์ ปีนขึ้นไปกดก่อนทรายจะท่วม!' }, stat: 'CHA' },
+      { text: { en: 'Parkour my way up the falling sand and the walls to slap the switch myself.', th: 'อาศัยจังหวะทรายร่วง กระโดดไต่กำแพงรัวๆ แบบพาร์คัวร์ขึ้นไปกดสวิตช์เองเลย' }, stat: 'AGI' }
     ]
   },
   {
     id: 15,
     text: {
-      en: 'During a treacherous dungeon crawl, your closest friend triggers a dart trap and collapses from a potent, unknown neurotoxin. You have moments to save them. What is your plan?',
-      th: 'ระหว่างการตะลุยดันเจี้ยนอันตราย เพื่อนสนิทของคุณไปเหยียบกับดักลูกดอกและล้มลงจากพิษต่อระบบประสาทร้ายแรงที่ไม่รู้จัก คุณมีเวลาแค่ไม่กี่นาทีในการช่วยพวกเขา คุณมีแผนอย่างไร?'
+      en: 'Your best friend just triggered a dart trap and collapsed from poison. You have seconds to act!',
+      th: 'เพื่อนสนิทเผลอโดนลูกดอกอาบพิษร้ายแรงเล่นงานจนล้มพับ คุณมีเวลาแค่ไม่กี่วินาที!'
     },
     choices: [
-      { text: { en: 'Examine the patient’s symptoms, consult my knowledge of local flora, and quickly grind nearby moss into a natural poultice.', th: 'ตรวจสอบอาการของผู้ป่วย ปรึกษาความรู้เกี่ยวกับพืชพรรณในท้องถิ่น และรีบบดตะไคร่น้ำใกล้ๆเพื่อทำเป็นยาพอกธรรมชาติ' }, stat: 'WIS' },
-      { text: { en: 'Use blinding speed to strike specific nerve clusters, halting the venom\'s spread just long enough to apply a makeshift tourniquet.', th: 'ใช้วิชาสกัดจุดด้วยความเร็วแสงเพื่อหยุดการไหลเวียนของพิษในร่างกายชั่วคราว ซื้อเวลาจนกว่าจะใช้สายรัดห้ามเลือดชั่วคราวได้' }, stat: 'AGI' },
-      { text: { en: 'Analyze the remaining dart\'s residue and immediately mix together a stabilizing chemical counter-agent using my supplies.', th: 'วิเคราะห์สารตกค้างบนลูกดอกที่เหลือ และผสมสารเคมีแก้พิษเพื่อรักษาสภาพร่างกายโดยใช้เสบียงที่ฉันมีอยู่ทันที' }, stat: 'INT' },
-      { text: { en: 'Perform an emergency extraction using impossibly precise knife cuts to safely remove the poisoned flesh before it spreads.', th: 'ทำการผ่าตัดฉุกเฉินโดยใช้การกรีดมีดที่แม่นยำอย่างเหลือเชื่อเพื่อเฉือนเนื้อที่ถูกพิษออกไปอย่างปลอดภัยก่อนที่จะลาม' }, stat: 'DEX' }
+      { text: { en: 'Look around for local herbs and quickly grind them into an emergency healing paste.', th: 'กวาดสายตามองหาสมุนไพรแถวนั้น เด็ดมาบดผสมเป็นยาพอกถอนพิษแบบฉุกเฉิน' }, stat: 'WIS' },
+      { text: { en: 'Quickly hit their pressure points to stop the blood flow and halt the venom.', th: 'จิ้มสกัดจุดตามเส้นประสาทเพื่อนด้วยความไวแสง ใช้วิชาสกัดการไหลเวียนของพิษไว้ก่อน' }, stat: 'AGI' },
+      { text: { en: 'Analyze the poison on the dart and instantly mix the exact chemical antidote.', th: 'วิเคราะห์คราบพิษที่ลูกดอก แล้วรีบผสมสารเคมีต้านพิษจากขวดทดลองในกระเป๋า' }, stat: 'INT' },
+      { text: { en: 'Grab a scalpel and perform an insanely precise emergency surgery to cut out the poison.', th: 'หยิบมีดผ่าตัดฉุกเฉิน เฉือนเนื้อตายส่วนที่โดนพิษออกไปอย่างแม่นยำก่อนมันจะลาม' }, stat: 'DEX' }
     ]
   },
   {
     id: 16,
     text: {
-      en: 'The spectral guardian of a mystic archive demands a toll not of gold, but of rare insight, before granting you access.',
-      th: 'ผู้พิทักษ์วิญญาณแห่งหอจดหมายเหตุลึกลับเรียกร้องค่าผ่านทางที่ไม่ใช่ทองคำ แต่เป็นความเข้าใจที่ลึกซึ้งที่หาได้ยาก ก่อนที่จะอนุญาตให้คุณเข้าไปได้'
+      en: 'A ghost guarding an ancient library won\'t take money. It wants "rare insight" to let you pass.',
+      th: 'ผีเฝ้าหอสมุดไม่รับสินบน มันขอ "ความรู้แจ้งที่หาได้ยาก" เป็นค่าผ่านทาง คุณจะเอาอะไรไปแลก?'
     },
     choices: [
-      { text: { en: 'Offer a profound, universally true reflection on the nature of mortality and the cycle of souls that leaves the ghost pondering.', th: 'เสนอข้อคิดที่ลึกซึ้งและเป็นความจริงสากลเกี่ยวกับธรรมชาติของความตายและวัฏจักรของจิตวิญญาณ ซึ่งทำให้ผีตนนั้นต้องหยุดคิด' }, stat: 'WIS' },
-      { text: { en: 'Distract the entity by demonstrating a mesmerizing, impossible sleight-of-hand trick, confusing its ethereal perception long enough to slip by.', th: 'เบี่ยงเบนความสนใจของวิญญาณด้วยการแสดงมายากลเปลี่ยนของด้วยมือที่สะกดสายตาและเป็นไปไม่ได้ เพื่อทำให้การรับรู้ทางวิญญาณของมันสับสนนานพอที่จะแอบผ่านไปได้' }, stat: 'DEX' },
-      { text: { en: 'Recite a beautifully tragic poem about the guardian\'s forgotten mortal life, moving the restless spirit to tears.', th: 'ขับขานบทกวีที่ไพเราะแต่แสนเศร้าเกี่ยวกับชีวิตมนุษย์ที่ถูกลืมของผู้พิทักษ์ ซึ่งทำให้วิญญาณที่กระสับกระส่ายถึงกับหลั่งน้ำตา' }, stat: 'CHA' },
-      { text: { en: 'Decipher the complex, multi-dimensional paradox etched onto the gate itself and speak the logical solution aloud.', th: 'ถอดรหัสความขัดแย้งหลายมิติอันซับซ้อนที่สลักอยู่บนประตู และพูดวิธีแก้ปัญหาที่เป็นเหตุเป็นผลออกมาดังๆ' }, stat: 'INT' }
+      { text: { en: 'Drop a super deep philosophical thought about life and death that blows its mind.', th: 'พูดปรัชญาล้ำลึกเกี่ยวกับการเวียนว่ายตายเกิดของมนุษย์ จนผีต้องหยุดคิดตาม' }, stat: 'WIS' },
+      { text: { en: 'Distract it with an impossible magic trick, making it confused while I slip right past.', th: 'โชว์มายากลสลับของด้วยมือไวขั้นเทพ หลอกให้วิญญาณงงแล้วเราแอบเดินเนียนๆ ผ่านไป' }, stat: 'DEX' },
+      { text: { en: 'Recite a beautiful, heartbreaking poem about its past life that moves the ghost to tears.', th: 'ท่องบทกวีสุดเศร้าเกี่ยวกับชีวิตในอดีตของมัน จนวิญญาณซาบซึ้งและร้องไห้ออกมา' }, stat: 'CHA' },
+      { text: { en: 'Look at the crazy complex math puzzle on the door and just solve it out loud.', th: 'ถอดรหัสปริศนาคณิตศาสตร์หลายมิติที่สลักบนกำแพง แล้วอธิบายวิธีแก้ให้มันฟัง' }, stat: 'INT' }
     ]
   },
   {
     id: 17,
     text: {
-      en: 'A terrifying dragon awakens and pins you down, clearly amused. It asks why it shouldn\'t simply eat you.',
-      th: 'มังกรที่น่าสะพรึงกลัวตื่นขึ้นมาและกดคุณลงกับพื้น มันดูขบขันและถามว่าทำไมมันถึงไม่ควรกินคุณเสียดื้อๆ'
+      en: 'A massive dragon has you pinned down. It laughs and asks, "Give me one good reason I shouldn\'t eat you right now."',
+      th: 'มังกรยักษ์จับคุณกดลงกับพื้น มันหัวเราะแล้วถามว่า "ทำไมข้าถึงไม่ควรกินเจ้าซะตอนนี้เลยล่ะ?"'
     },
     choices: [
-      { text: { en: 'Sense its ancient loneliness and gently propose that devouring me provides a momentary meal, but conversing with me provides a lasting memory.', th: 'สัมผัสได้ถึงความเหงาอันเก่าแก่ของมัน และเสนออย่างนุ่มนวลว่าการกินฉันเข้าไปจะเป็นเพียงแค่มื้ออาหารชั่วคราว แต่การสนทนากับฉันจะมอบความทรงจำที่ยืนยาว' }, stat: 'WIS' },
-      { text: { en: 'With a flick of my wrist, I perfectly bounce a blinding smoke pellet off a stalactite, using the split-second distraction to slide into a narrow crevice.', th: 'สะบัดข้อมือปาระเบิดควันให้ชิ่งกับหินย้อยอย่างแม่นยำเพื่อบดบังทัศนวิสัย และอาศัยเสี้ยววินาทีที่มันชะงัก สไลด์ตัวหลบเข้าไปในซอกหินแคบๆ' }, stat: 'DEX' },
-      { text: { en: 'Boldly look into its fiery eyes, confidently flatter its majestic scales, and offer my services as its loyal herald to the human lands.', th: 'จ้องมองเข้าไปในดวงตาที่ลุกเป็นไฟของมันอย่างกล้าหาญ ยกยอเกล็ดอันสง่างามของมันอย่างมั่นใจ และเสนอตัวเป็นผู้ประกาศที่ภักดีเพื่อส่งสารไปยังดินแดนมนุษย์' }, stat: 'CHA' },
-      { text: { en: 'Quickly recall the draconic customs of parley and invoke the Rite of the Silver Tongue, legally forcing it to hear my case.', th: 'นึกถึงธรรมเนียมการเจรจาของมังกรอย่างรวดเร็ว และอ้างสิทธิ์ในพิธีเจรจาต่อรองด้วยวาทศิลป์ ซึ่งเป็นการบังคับทางกฎหมายให้มันต้องฟังคำแก้ต่างของฉัน' }, stat: 'INT' }
+      { text: { en: '"Eating me is just a snack. But sparing me means you get a friend to talk to forever."', th: '"กินข้าไปก็อิ่มแค่มื้อเดียว แต่เก็บข้าไว้คุยแก้เหงา ท่านจะได้เพื่อนไปตลอดกาลนะ"' }, stat: 'WIS' },
+      { text: { en: 'Bounce a smoke bomb off the ceiling and slide into a tiny crack while it\'s blinded.', th: 'ปาระเบิดควันอัดเพดาน อาศัยจังหวะมันเผลอหลับตา สไลด์ตัวหนีเข้าซอกหินอย่างไว!' }, stat: 'DEX' },
+      { text: { en: 'Look right into its eyes, compliment how majestic it is, and offer to work for it.', th: 'จ้องตามันแล้วทำใจดีสู้เสือ ชมว่าเกล็ดมันสวยจัง แล้วเสนอตัวเป็นโฆษกประจำตัวให้มันเลย' }, stat: 'CHA' },
+      { text: { en: 'Start quoting ancient dragon laws of parley. Legally, it *has* to listen to me now.', th: 'งัดกฎหมายสนธิสัญญามังกรโบราณมาอ้าง อธิบายตามหลักการจนมันต้องยอมปล่อย' }, stat: 'INT' }
     ]
   },
 
@@ -241,14 +241,14 @@ export const QUESTIONS: Question[] = [
   {
     id: 18,
     text: {
-      en: 'When the dust has settled, the wars are won, and your earthly journey comes to an end... how do you truly want the world to remember your name?',
-      th: 'เมื่อฝุ่นควันจางลง สงครามได้สิ้นสุดลงด้วยชัยชนะ และการเดินทางบนโลกของคุณมาถึงจุดจบ... คุณอยากให้โลกจดจำชื่อของคุณจริงๆว่าอย่างไร?'
+      en: 'The adventure is over. Years from now, how do you want the world to remember you?',
+      th: 'ในที่สุดการผจญภัยก็จบลง คุณอยากให้คนรุ่นหลังจดจำคุณในฐานะอะไร?'
     },
     choices: [
-      { text: { en: 'As a fearless, indomitable champion whose mighty deeds and strength literally re-shaped mountains and kingdoms.', th: 'ในฐานะแชมเปี้ยนที่ไร้ความกลัวและไม่มีใครเอาชนะได้ ผู้ซึ่งมีความดีความชอบและความแข็งแกร่งมหาศาลที่เปลี่ยนแปลกรูปร่างของภูเขาและอาณาจักรอย่างแท้จริง' }, stat: 'STR' },
-      { text: { en: 'As a supreme, all-knowing sage whose recorded spells and philosophies became the foundation of modern civilization.', th: 'ในฐานะปราชญ์ผู้รอบรู้และปกครองสูงสุด ซึ่งคาถาและปรัชญาที่ถูกบันทึกไว้ได้กลายมาเป็นรากฐานของอารยธรรมสมัยใหม่' }, stat: 'INT' },
-      { text: { en: 'As a romanticized legend, immortalized forever through the taverns and theaters by the most beautiful songs ever sung.', th: 'ในฐานะตำนานที่แสนโรแมนติก ซึ่งถูกทำให้เป็นอมตะตลอดไปตามโรงเตี๊ยมและโรงละครด้วยบทเพลงที่ไพเราะที่สุดเท่าที่เคยมีการร้องขานมา' }, stat: 'CHA' },
-      { text: { en: 'I do not want to be remembered. I prefer to fade into the shadows, remaining an elusive ghost that protected them all.', th: 'ฉันไม่อยากเป็นที่จดจำ ฉันชอบที่จะเลือนหายไปในเงามืด และยังคงเป็นวิญญาณที่ไม่มีใครจับต้องได้ซึ่งคอยปกป้องพวกเขาตลอดมา' }, stat: 'AGI' }
+      { text: { en: 'An unstoppable champion who was strong enough to move mountains and save the world.', th: 'ยอดนักรบไร้พ่าย ผู้มีพละกำลังสั่นสะเทือนปฐพีและปกป้องอาณาจักรนี้ไว้!' }, stat: 'STR' },
+      { text: { en: 'The ultimate genius. The one whose spells and writings basically built modern society.', th: 'มหาปราชญ์ผู้รอบรู้ ผู้คิดค้นคัมภีร์เวทมนตร์ที่เป็นรากฐานของโลกยุคใหม่' }, stat: 'INT' },
+      { text: { en: 'A total legend. I want my adventures to be sung in taverns for hundreds of years.', th: 'ตำนานสุดโรแมนติก ที่ถูกเล่าขานผ่านบทเพลงฮิตตามร้านเหล้าไปตลอดกาล' }, stat: 'CHA' },
+      { text: { en: 'I don\'t want fame. I just want to fade into the shadows like a ghost who protected them.', th: 'ไม่อยากถูกจดจำหรอก ขอเป็นแค่วิญญาณไร้ตัวตนที่คอยแอบปกป้องทุกคนอยู่เงียบๆ ดีกว่า' }, stat: 'AGI' }
     ]
   }
 ];
